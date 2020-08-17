@@ -1,0 +1,20 @@
+.PortfolioHeader {
+  background-color: white;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  width: 100%;
+}
+
+.PortfolioHeader-name{
+  margin-top: 20px;
+  font-size: calc(10px + 5vmin);
+}
+
+.PortfolioHeader-hello{
+  margin: 20px 120px;
+  font-size: calc(10px + 2vmin);
+}
