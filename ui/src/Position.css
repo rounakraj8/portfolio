@@ -1,12 +1,21 @@
 .Position {
   background-color: white;
- 
   display: flex;
   flex-direction: column;
   justify-content:  center;
-  align-items: flex-start;
   font-size: calc(10px + 1vmin);
   color: black;
   width: 100%;
+}
+
+.Position-row{
+  display: flex;
+  justify-content: space-between;
+  min-width: 750px;
+}
+
+.Position-row>li{
+  font-weight: lighter;
+  list-style-type: disc;
 }
 

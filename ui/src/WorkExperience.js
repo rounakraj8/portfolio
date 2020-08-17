@@ -5,11 +5,14 @@ import { experiences } from './data/workExperienceData.js';
 
 function WorkExperience() {
   return (
-    <div className="WorkExperience">
-      Places I have worked:
-      {experiences.map((experience, key) =>
-        <Experience key={key} experience={experience} />
-      )}
+    <div>
+      <div className="WorkExperience-header">
+        Places I have worked:</div>
+      <div className="WorkExperience-experience">
+        {experiences.map((experience, key) =>
+          <Experience key={key} experience={experience} />
+        )}
+      </div>
     </div>
   );
 }

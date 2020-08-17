@@ -6,8 +6,9 @@ class Position extends React.Component {
     const { position } = this.props;
     return (
       <div className="Position">
-        <span>{position.designation} &nbsp;
-        <i>From</i> {position.from} <i>To</i> {position.to}
+        <span className="Position-row">
+        <span>{position.designation}</span>
+        <span>{position.from} - {position.to}</span>
         </span>
       </div>
     );

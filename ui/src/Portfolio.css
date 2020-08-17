@@ -1,6 +1,8 @@
 .Portfolio {
   text-align: center;
   min-width: auto;
+
+  
 }
 
 .Portfolio-header {
@@ -11,5 +13,5 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  min-width: auto;
+  background-color: white;
 }
