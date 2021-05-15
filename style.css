@@ -91,7 +91,7 @@
   font-weight: bolder;
 }
 
-.time-period{
+.time-period {
   font-size: 0.7em;
   font-style: italic;
 }
@@ -104,7 +104,7 @@
   margin-top: 45px;
 }
 
-.sophos-logo{
+.sophos-logo {
   padding: 5px;
   background-color: blue;
 }
@@ -118,8 +118,6 @@
   align-items: center;
   border-radius: 10px;
 }
-
-
 
 .certificate-list {
   display: flex;
@@ -146,7 +144,6 @@
   width: 100%;
   max-width: 250px;
   height: auto;
-
 }
 
 .articles {
@@ -163,12 +160,12 @@
   margin-top: 15px;
 }
 
-
 .article-list a {
   text-decoration: none !important;
 }
 
-.article-list a:visited, a::after {
+.article-list a:visited,
+a::after {
   text-decoration: none !important;
   color: black;
 }
