@@ -96,7 +96,7 @@ h2{
 }
 
 .work-places {
-  margin-top: 30px;
+  margin-top: 10px;
   list-style-type: none;
   font-size: 1.5em;
 }
@@ -111,11 +111,11 @@ h2{
 }
 
 .work-places img {
-  width: 110px;
+  width: 100px;
 }
 
 .work-places li {
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .sophos-logo {
@@ -157,7 +157,7 @@ h2{
 
 .certificate-list img {
   width: 100%;
-  max-width: 235px;
+  max-width: 225px;
   height: auto;
 }
 
