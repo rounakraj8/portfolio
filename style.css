@@ -19,7 +19,12 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  overflow: visible;
+  overflow: hidden;
+}
+
+.header-left{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .photo img {
@@ -30,16 +35,15 @@
 .header .intro {
   font-size: 28px;
   width: 65%;
-  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: auto;
+  justify-content: space-around;
+  
 }
 
 .header .external-profiles {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .skills {
