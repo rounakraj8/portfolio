@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-.header-left{
+.header-left {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -38,11 +38,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 
-.header .intro p{
-  margin-top: 15px;;
+.header .intro p {
+  margin-top: 15px;
 }
 
 .header .external-profiles {
