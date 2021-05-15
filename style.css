@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 28px;;
 }
 
 .page {
@@ -14,73 +13,94 @@
 .header {
   width: 100%;
   height: 500px;
-  background-color: #DDD78D;
+  background-color: #ddd78d;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
-.photo img{
-    max-width: 250px;
-    border-radius: 250px;
+.photo img {
+  max-width: 250px;
+  border-radius: 250px;
 }
 
-.header .intro{
-    font-size: 28px;
-    width: 65%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.header .intro {
+  font-size: 28px;
+  width: 65%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header .external-profiles{
-    display: flex;
-    justify-content: space-evenly;
+.header .external-profiles {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .section {
   width: 100%;
   height: 600px;
-  background-color: #DCBF85;
+  background-color: #dcbf85;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    
-
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skill-list{
-    width: 80%;
-    margin-top: 10px;
-    margin-left: 50px;
-    list-style-type:circle;
-    font-size: 0.7em;
-    
+.skill-list {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 50px;
+  list-style-type: circle;
+  font-size: 1.7em;
 }
 
-.skill-list li{
+.skill-list li {
+}
+.content {
+  width: 100%;
 
+  display: flex;
+  justify-content: space-between;
 }
 
-.work-experience{
-    background-color: #8B635C;
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    align-items: center;
+.work-experience {
+  width: 50%;
+  background-color: #8b635c;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-places {
+   margin-top: 50px; 
+  list-style-type: none;
+  font-size: 1.5em;
+  
+}
+
+.designation{
+  font-weight: bolder;
+}
+
+.work-places img {
+  width: 120px;
+}
+
+.work-places li {
+  margin-top: 50px;
 }
 
 .footer {
   width: 100%;
-  height: 50px;
-  font-size: 0.3em;
-  background-color: #93A29B;
+  height: 30px;
+  font-size: 1em;
+  background-color: #93a29b;
   display: flex;
   justify-content: space-around;
   align-items: center;
