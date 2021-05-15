@@ -12,6 +12,10 @@
   font-family: "Roboto";
 }
 
+h2{
+  margin-top: 25px;
+}
+
 .header {
   margin-top: 5px;
   width: 98%;
