@@ -41,6 +41,10 @@
   
 }
 
+.header .intro p{
+  margin-top: 15px;;
+}
+
 .header .external-profiles {
   display: flex;
   justify-content: space-around;
