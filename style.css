@@ -5,7 +5,6 @@
 
 .page {
   display: flex;
-
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -15,7 +14,6 @@
 .header {
   margin-top: 5px;
   width: 98%;
-  /* height: 500px; */
   background-color: #4791db;
   display: flex;
   justify-content: space-around;
@@ -36,6 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: auto;
 }
 
 .header .external-profiles {
@@ -83,7 +82,7 @@
 }
 
 .work-places {
-  margin-top: 20px;
+  margin-top: 10px;
   list-style-type: none;
   font-size: 1.5em;
 }
@@ -97,7 +96,7 @@
 }
 
 .work-places li {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .certifications {
@@ -134,7 +133,10 @@
 }
 
 .certificate-list img {
-  width: 230px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+
 }
 
 .articles {
