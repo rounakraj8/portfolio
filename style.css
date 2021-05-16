@@ -12,7 +12,7 @@
   font-family: "Roboto";
 }
 
-h2{
+h2 {
   margin-top: 25px;
 }
 
@@ -54,7 +54,9 @@ h2{
   justify-content: space-around;
 }
 
-.header .external-profiles a,a:visited, a:active {
+.header .external-profiles a,
+a:visited,
+a:active {
   text-decoration: none;
   color: black;
 }
@@ -66,8 +68,6 @@ h2{
 .fa-quora {
   color: #b92b27;
 }
-
-
 
 .skills {
   width: 98%;
