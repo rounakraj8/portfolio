@@ -171,6 +171,10 @@ a {
 	text-decoration: none;
 	width: 70%;
 }
+
+.article-list>li>a>.fas{
+	margin-left: 10px;
+}
 .footer {
 	align-items: center;
 	background-image: linear-gradient(#357cc4, #c0d1e2);
