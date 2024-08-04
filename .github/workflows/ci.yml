@@ -27,10 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: './website/package-lock.json'
-    - name: Set current date as env variable
-      run: echo "::set-env name=build_time::$(date +'%Y-%m-%dT%H:%M:%S')"
-    - name: Echo current date
-      run: echo $build_time    
     - name: Install Dependencies   
       working-directory: website
       run: npm install  
