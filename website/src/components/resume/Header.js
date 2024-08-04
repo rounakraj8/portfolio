@@ -17,7 +17,7 @@ const Header = () => (
       <div className='contact'>
         <div><FontAwesomeIcon icon={faPhoneSquare} />&nbsp;{resume.contact.mobileNo}</div>
         <div><FontAwesomeIcon icon={faEnvelope} />&nbsp;<a href={"mailto:" + resume.contact.emailId} rel="noopener noreferrer" target='_blank'>{resume.contact.emailId}</a></div>
-        <div><FontAwesomeIcon icon={faGlobe} />&nbsp;<a href={resume.contact.website} rel="noopener noreferrer" target='_blank'>{resume.contact.website}</a></div>
+        <div><FontAwesomeIcon icon={faGlobe} />&nbsp;<a target='_blank' rel='noopener noreferrer' href={resume.contact.website} >{resume.contact.website.replace("https://", "")}</a></div>
         <div><FontAwesomeIcon icon={faLocationPin} /> &nbsp;{resume.contact.country}</div>
         <div className='externalLinkItems'>
           <a href={resume.contact.gitHub} rel="noopener noreferrer" target='_blank'><FontAwesomeIcon icon={faGithub} color='black' size='2x' /></a>
