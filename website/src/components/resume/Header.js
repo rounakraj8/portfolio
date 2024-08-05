@@ -5,9 +5,16 @@ import { faPhoneSquare, faEnvelope, faGlobe, faLocationPin, } from '@fortawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import resume from './../assets/data/resume.json'
+import settings from "./../../website-setting.json"
 
 
-const Header = () => (
+const Header = () => {
+  
+  if (!settings.resume.headerEnabled) {
+    return null; // Return null to render nothing
+  }
+  
+  return (
   <header className="header">
     <div className='heading'>
       <div className='nameAndProfession'>
@@ -35,6 +42,6 @@ const Header = () => (
       </p>
     </div>
   </header>
-);
+)};
 
 export default Header;

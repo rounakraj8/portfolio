@@ -1,16 +1,23 @@
 import React from 'react';
 import './Projects.css';
 import resume from './../assets/data/resume.json'
+import settings from "./../../website-setting.json"
 
 import { capitalizeEachWord } from './../common/utils'
 
 
-const Projects = () => (
+const Projects = () => { 
+  
+  if (!settings.resume.projectsEnabled) {
+    return null; // Return null to render nothing
+  }
+  
+  return(
   <section className="projects section">
     <h3>PROJECTS</h3>
     {
-      resume.projects.map(project => (
-        <div className="project">
+      resume.projects.map((project, index) => (
+        <div key={index} className="project">
           <div className="projectAndOrg">
             <h4 className="projectName">{capitalizeEachWord(project.name)}</h4>
             <p className="orgName">{project.organization}</p>
@@ -26,6 +33,6 @@ const Projects = () => (
     }
 
   </section>
-);
+)};
 
 export default Projects;

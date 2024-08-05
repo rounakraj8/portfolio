@@ -2,13 +2,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css'; // Import the CSS file for styling
+import settings from './website-setting.json'
 
 function Navigation() {
   return (
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-left">
-          <NavLink  to="/" activeClassName="active-link">
+          <NavLink to="/" activeClassName="active-link">
             Rounak Raj
           </NavLink>
         </div>
@@ -18,11 +19,13 @@ function Navigation() {
               Home
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink to="/resume" activeClassName="active-link">
-              Resume
-            </NavLink>
-          </li>
+          {settings.resumeEnabled &&
+            <li className="nav-item">
+              <NavLink to="/resume" activeClassName="active-link">
+                Resume
+              </NavLink>
+            </li>
+          }
         </ul>
       </div>
     </nav>

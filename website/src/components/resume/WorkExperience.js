@@ -1,20 +1,28 @@
 import React from 'react';
 import './WorkExperience.css';
 import resume from './../assets/data/resume.json'
+import settings from "./../../website-setting.json"
 
-const WorkExperience = () => (
-  <section className="work-experience section">
+const WorkExperience = () => {
+  
+    
+  if (!settings.resume.workExperienceEnabled) {
+    return null; // Return null to render nothing
+  }
+
+  return (
+  <section className='work-experience section'>
     <h3>WORK EXPERIENCE</h3>
-    {resume.workExperiences.map(workExperience =>
-      <div className="job">
+    {resume.workExperiences.map((workExperience, index) =>
+      <div key={index} className="job">
         <div className="designationCompanyTimePeriod">
           <h4 className="jobDesignation">{workExperience.designation}</h4>
           <div className="companyAndTimePeriod">{workExperience.company} | {workExperience.fromTimePeriod} - {workExperience.toTimePeriod}</div>
         </div>
         {workExperience.jobSummary &&
           <ul>
-            {workExperience.jobSummary.map(summary => (
-              <li>{summary}</li>
+            {workExperience.jobSummary.map((summary, index) => (
+              <li key={index}>{summary}</li>
             ))}
           </ul>
         }
@@ -22,6 +30,6 @@ const WorkExperience = () => (
     )
     }
   </section>
-);
+)};
 
 export default WorkExperience;
