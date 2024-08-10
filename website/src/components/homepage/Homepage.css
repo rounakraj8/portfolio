@@ -37,7 +37,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-
 .section {
   margin-bottom: 10px;
 }
@@ -52,7 +51,6 @@ h2 {
 .section h4 {
   font-size: 1.2em;
   color: #333;
-  /* margin-bottom: 5px; */
 }
 
 .section p {
@@ -70,10 +68,13 @@ h2 {
   color: #666;
 }
 
-
 .homepage-container .avatar-introduction {
   display: flex;
   padding: 20px;
+  flex-direction: row; /* Default layout for larger screens */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .homepage-container .avatar-container {
@@ -100,4 +101,113 @@ h2 {
   font-weight: 350;
   line-height: 30px;
   padding: 50px;
+  max-width: 600px;
+  /* margin: 0; */
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .left-content,
+  .right-sidebar {
+    flex: 1 1 100%;
+    padding: 10px;
+    border: none;
+  }
+
+  .homepage-container {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .avatar-introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-container .avatar-container {
+    margin: 20px;
+  }
+
+  .homepage-container .avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .homepage-container .introduction {
+    font-size: 18px;
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .left-content,
+  .right-sidebar {
+    flex: 1 1 100%;
+    padding: 20px;
+    border: none;
+  }
+
+  .homepage-container {
+    min-height: auto;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .homepage-container .avatar-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;
+    
+  }
+
+  .homepage-container .avatar-container {
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;
+    
+  }
+
+  .homepage-container .avatar {
+    
+    width: 150px;
+    height: 150px;
+    align-self: center;
+
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .homepage-container .introduction {
+    font-size: 16px;
+    padding: 15px;
+    /* max-width: 100%; */
+    margin-top: 10px;
+
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;
+  }
 }
