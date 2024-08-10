@@ -71,7 +71,7 @@ You can customize the sections displayed on your portfolio by modifying the `web
 
    ```json
    {
-     "landingPageEnabled": true,
+     "homepageEnabled": true,
      "resumeEnabled": true,
      "resume": {
        "headerEnabled": true,
