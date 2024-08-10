@@ -1,0 +1,15 @@
+{
+    "landingPageEnabled": true,
+
+    "resumeEnabled": true,
+    "resume": {
+        "headerEnabled": true,
+        "contactEnabled": true,
+        "workExperienceEnabled": true,
+        "projectsEnabled": true,
+        "educationEnabled": true,
+        "skillsEnabled": true,
+        "launguagesEnabled": true,
+        "interestsEnabled": true
+    }
+}
