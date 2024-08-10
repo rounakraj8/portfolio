@@ -84,7 +84,7 @@ You can customize the sections displayed on your portfolio by modifying the `web
 
 3. **Locate the `resume.json` file:**
 
-   The file is located in `website/src/components/assets/data/resume.json`.
+   The file is located in `website/src/assets/data/resume.json`.
 
 4. **Modify personal and professional information:**
 

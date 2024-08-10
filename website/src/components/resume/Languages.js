@@ -1,6 +1,6 @@
 import React from 'react';
 import './Languages.css';
-import resume from './../assets/data/resume.json'
+import resume from './../../assets/data/resume.json'
 import settings from "./../../website-setting.json"
 
 const Languages = () => {  

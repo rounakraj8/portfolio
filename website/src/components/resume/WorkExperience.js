@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkExperience.css';
-import resume from './../assets/data/resume.json'
+import resume from './../../assets/data/resume.json'
 import settings from "./../../website-setting.json"
 
 const WorkExperience = () => {

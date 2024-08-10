@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
-import resume from './components/assets/data/resume.json'
+import resume from './assets/data/resume.json'
 
 function Footer() {
 

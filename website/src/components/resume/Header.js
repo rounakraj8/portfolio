@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.css';
-import profilePic from '../assets/images/my.jpeg';
+import profilePic from '../../assets/images/my.jpeg';
 import { faPhoneSquare, faEnvelope, faGlobe, faLocationPin, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import resume from './../assets/data/resume.json'
+import resume from './../../assets/data/resume.json'
 import settings from "./../../website-setting.json"
 
 
