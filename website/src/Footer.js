@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
-import resume from './assets/data/resume.json'
+import myData from './assets/data/myData.json'
 
 function Footer() {
 
@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className='copyRight'>&copy; {resume.name}, {currentYear}</div>
+      <div className='copyRight'>&copy; {myData.name}, {currentYear}</div>
     </footer>
   );
 }

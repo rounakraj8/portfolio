@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkExperience.css';
-import resume from './../../assets/data/resume.json'
+import myData from './../../assets/data/myData.json'
 import settings from "./../../website-setting.json"
 
 const WorkExperience = () => {
@@ -13,7 +13,7 @@ const WorkExperience = () => {
   return (
   <section className='work-experience section'>
     <h3>WORK EXPERIENCE</h3>
-    {resume.workExperiences.map((workExperience, index) =>
+    {myData.workExperiences.map((workExperience, index) =>
       <div key={index} className="job">
         <div className="designationCompanyTimePeriod">
           <h4 className="jobDesignation">{workExperience.designation}</h4>

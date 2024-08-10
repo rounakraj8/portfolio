@@ -1,6 +1,6 @@
 import React from 'react';
 import './Languages.css';
-import resume from './../../assets/data/resume.json'
+import myData from './../../assets/data/myData.json'
 import settings from "./../../website-setting.json"
 
 const Languages = () => {  
@@ -14,7 +14,7 @@ const Languages = () => {
     <h3>LANGUAGES</h3>
     <p>
       {
-        resume.languages.map(language => (
+        myData.languages.map(language => (
           language.name + "(" + language.fluency + ")"
         )).join(", ")
       }

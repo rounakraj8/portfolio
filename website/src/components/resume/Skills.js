@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import resume from './../../assets/data/resume.json'
+import myData from './../../assets/data/myData.json'
 import settings from "./../../website-setting.json"
 
 const Skills = () => {
@@ -13,7 +13,7 @@ const Skills = () => {
   <section className="skills section">
     <h3>SKILLS</h3>
     {
-      resume.skills.map((skill, index) => (
+      myData.skills.map((skill, index) => (
         <p key={index}>{skill}</p>
       ))
     }

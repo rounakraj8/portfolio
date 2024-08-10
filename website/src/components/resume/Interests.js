@@ -1,6 +1,6 @@
 import React from 'react';
 import './Interests.css';
-import resume from './../../assets/data/resume.json'
+import myData from './../../assets/data/myData.json'
 import settings from "./../../website-setting.json"
 
 
@@ -13,7 +13,7 @@ const Interests = () => {
   return (
   <section className="interests section">
     <h3>INTERESTS</h3>
-    <p>{resume.technicalInterests.join(", ")}</p>
+    <p>{myData.technicalInterests.join(", ")}</p>
   </section>
 )};
 
