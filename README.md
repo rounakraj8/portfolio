@@ -28,19 +28,26 @@ To clone and run this application, follow these steps:
    git clone https://github.com/rounakraj8/portfolio.git
    ```
 
-2. **Navigate to the project directory:**
+2. **Remove CNAME file:**
+
+   ```bash
+   rm CNAME
+   ```
+This CNAME is specfically for rounakraj.in. In case you have your own DNS, you can put the CNAME address here. Either use your own CNAME or delete the existing file, or else GitHub pages will not deploy successfully.
+
+3. **Navigate to the project directory:**
 
    ```bash
    cd portfolio/website
    ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-4. **Start the development server:**
+5. **Start the development server:**
 
    ```bash
    npm start
@@ -183,6 +190,16 @@ You can customize the sections displayed on your portfolio by modifying the `web
 5. **Save changes:**
 
    After modifying the settings, save the changes. The development server will automatically reload to reflect the updates.
+
+## Commiting & Pushing your changes to the GitHub
+
+   ```bash
+   git add .
+   git commit -am "change description"
+   git push main
+   ```
+You can also update the version of the app, it's located in `website/package.json`.
+You can also update the release notes in `release-notes.md`
 
 ## Deployment
 
