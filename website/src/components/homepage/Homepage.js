@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 
 import './Homepage.css';
-import profilePic from '../../assets/images/my.jpeg';
+import profilePic from '../../assets/images/my.png';
 import settings from "../../website-setting.json"
 
 import homepage from "../../assets/data/homepage.json"
