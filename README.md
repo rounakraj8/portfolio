@@ -28,26 +28,30 @@ To clone and run this application, follow these steps:
    git clone https://github.com/rounakraj8/portfolio.git
    ```
 
-2. **Remove CNAME file:**
+2. **Find & Replace "Rounak Raj" with you name**
+
+Find & Replace "Rounak Raj" with you name. And put you own favicon and image.
+
+3. **Remove CNAME file:**
 
    ```bash
    rm CNAME
    ```
 This CNAME is specfically for rounakraj.in. In case you have your own DNS, you can put the CNAME address here. Either use your own CNAME or delete the existing file, or else GitHub pages will not deploy successfully.
 
-3. **Navigate to the project directory:**
+4. **Navigate to the project directory:**
 
    ```bash
    cd portfolio/website
    ```
 
-4. **Install dependencies:**
+5. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-5. **Start the development server:**
+6. **Start the development server:**
 
    ```bash
    npm start
