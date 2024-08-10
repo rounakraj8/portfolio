@@ -61,5 +61,5 @@ jobs:
         export RELEASE_NOTES=$(cat ./release-notes.md)
         gh release create "$TAG_VERSION" \
           --title "Release $TAG_VERSION" \
-          --notes "Release notes for $TAG_VERSION<br/><br/> ${RELEASE_NOTES}" \
+          --notes "${RELEASE_NOTES}" \
           --target main
