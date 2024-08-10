@@ -1,11 +1,12 @@
 import './App.css';
 import Resume from './components/resume/Resume';
+import Homepage from './components/homepage/Homepage';
 import React, { useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation'
 import Footer from './Footer'
 import settings from './website-setting.json'
-import LandingPage from './components/landing-page/LandingPage';
+
 
 
 
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        {settings.landingPageEnabled && <Route path="/" element={<LandingPage />} />}
+        {settings.homepageEnabled && <Route path="/" element={<Homepage />} />}
         {settings.resumeEnabled && <Route path="/resume" element={<Resume ref={componentRef} />} />}
       </Routes>
       <Footer />
