@@ -57,7 +57,7 @@ This CNAME is specfically for rounakraj.in. In case you have your own DNS, you c
 
 ## Configuration
 
-You can customize the sections displayed on your portfolio by modifying the `website-setting.json` and `resume.json` files in the project.
+You can customize the sections displayed on your portfolio by modifying the `website-setting.json` and `myData.json` files in the project.
 
 ### Enable or Disable Sections
 
@@ -89,104 +89,14 @@ You can customize the sections displayed on your portfolio by modifying the `web
    - Set a value to `true` to enable a section or `false` to disable it.
    - For example, if you want to hide the `workExperience` section, set `"workExperienceEnabled"` to `false`.
 
-3. **Locate the `resume.json` file:**
+3. **Locate the `myData.json` file:**
 
-   The file is located in `website/src/assets/data/resume.json`.
+   The file is located in `website/src/assets/data/myData.json`.
 
 4. **Modify personal and professional information:**
 
-   This file contains your personal information, work experience, education, skills, and projects. You can customize it to reflect your own details:
+   This file contains your personal information, work experience, education, skills, and projects. You can customize it to reflect your own details.
 
-    <details>
-    
-   ```json
-   {
-     "name": "Rounak Raj",
-     "profession": "Software Engineer",
-     "contact": {
-       "mobileNo": "+91-8290689625",
-       "emailId": "rounakraj8@gmail.com",
-       "website": "https://rounakraj.in",
-       "country": "India",
-       "gitHub": "https://github.com/rounakraj8",
-       "linkedInUrl": "https://www.linkedin.com/in/rounakraj/"
-     },
-     "education": [
-       {
-         "institutionName": "Amity University",
-         "institutionLocation": "Jaipur",
-         "fromYear": "2011",
-         "toYear": "2015",
-         "course": "B.Tech",
-         "specialization": "CS&E"
-       }
-     ],
-     "skills": [
-       "Java",
-       "Python",
-       "AWS",
-       "Docker",
-       "Microservices",
-       "Distributed Systems",
-       "Apache Kafka",
-       "Apache Airflow",
-       "Redis"
-     ],
-     "technicalInterests": [
-       "Distributed Systems",
-       "Backend",
-       "Data Platform"
-     ],
-     "languages": [
-       {
-         "name": "English",
-         "fluency": "Professional"
-       },
-       {
-         "name": "Hindi",
-         "fluency": "Native"
-       }
-     ],
-     "summary": "I'm a Software Engineer specializing in back-end development with Java and Spring Boot...",
-     "workExperiences": [
-       {
-         "designation": "Senior Software Engineer 2",
-         "company": "Sophos",
-         "fromTimePeriod": "Jan 2021",
-         "toTimePeriod": "Present",
-         "jobSummary": [
-           "Worked on data ingestion services...",
-           "Contributed in creating a batch processing framework..."
-         ]
-       },
-       {
-         "designation": "Senior Development Engineer",
-         "company": "Pramati",
-         "fromTimePeriod": "Jul 2017",
-         "toTimePeriod": "Dec 2020",
-         "jobSummary": [
-           "Led the design and development of scalable applications...",
-           "Mentored team members..."
-         ]
-       }
-     ],
-     "projects": [
-       {
-         "name": "Central Data Platform",
-         "organization": "Sophos",
-         "summary": "As part of the Data platform team...",
-         "skills": [
-           "Java",
-           "Spring Boot",
-           "Apache Airflow",
-           "Apache Kafka",
-           "AWS"
-         ]
-       }
-     ]
-   }
-   ```
-    </details>
 5. **Save changes:**
 
    After modifying the settings, save the changes. The development server will automatically reload to reflect the updates.
